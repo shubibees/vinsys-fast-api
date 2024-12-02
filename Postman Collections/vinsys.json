@@ -1,0 +1,1476 @@
+{
+	"info": {
+		"_postman_id": "a9648334-411b-4df8-a500-7059247cd24f",
+		"name": "fast",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "New Folder",
+			"item": [
+				{
+					"name": "New Request",
+					"id": "1b0f69bf-cfea-432a-9ac3-a97eb68292a7",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "{{URL}}"
+					},
+					"response": []
+				},
+				{
+					"name": "certificateVerif",
+					"id": "f35eff36-3cb2-4ff0-b27a-822121f0917d",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "jwt",
+							"jwt": {
+								"secret": "98a144c773b6518a2e08d0b147edd10761bd35dd6cf5f8f0684a88a7c14548d0",
+								"addTokenTo": "header",
+								"payload": "",
+								"algorithm": "HS256",
+								"isSecretBase64Encoded": false,
+								"headerPrefix": "Bearer",
+								"queryParamKey": "token",
+								"header": "{}"
+							}
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{URL}}verifiedCertificate?certificate_number=456789",
+							"host": [
+								"{{URL}}verifiedCertificate"
+							],
+							"query": [
+								{
+									"key": "certificate_number",
+									"value": "456789"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "New Request",
+					"id": "82ac4498-6084-4db6-aaff-39ad2007916b",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				},
+				{
+					"name": "case_study",
+					"id": "557b0809-636f-4b75-9d62-8acf65987b82",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "jwt",
+							"jwt": {
+								"secret": "98a144c773b6518a2e08d0b147edd10761bd35dd6cf5f8f0684a88a7c14548d0",
+								"addTokenTo": "header",
+								"payload": "",
+								"algorithm": "HS256",
+								"isSecretBase64Encoded": false,
+								"headerPrefix": "Bearer",
+								"queryParamKey": "token",
+								"header": "{}"
+							}
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"name\": \"ibeestest\",\r\n  \"email\": \"ibeestest@gmail.com\",\r\n  \"phone_number\": \"8445180061\",\r\n  \"country\": \"India\",\r\n  \"state\": \"Maharashtra\",\r\n  \"form_type\":\"case study\",\r\n  \"job_title\": \"koko\",\r\n  \"page_url\": \"https://www.vinsys.com/training/case-studies\",\r\n  \"referer\": \"\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{URL}}post-training-casestudy-form-data-new"
+					},
+					"response": []
+				},
+				{
+					"name": "New Request",
+					"id": "e43627db-0031-45ea-8889-72363f1d2612",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				}
+			],
+			"id": "b9ece8c0-c0d3-4252-96aa-0f6c259895f3"
+		},
+		{
+			"name": "ip improve",
+			"item": [
+				{
+					"name": "New Request",
+					"id": "40944201-2243-4d31-85eb-911e6269d7be",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "jwt",
+							"jwt": {
+								"secret": "{{secrete_key}}",
+								"addTokenTo": "header",
+								"payload": "",
+								"algorithm": "HS256",
+								"isSecretBase64Encoded": false,
+								"headerPrefix": "Bearer",
+								"queryParamKey": "token",
+								"header": "{}"
+							}
+						},
+						"method": "GET",
+						"header": [],
+						"url": "{{URL}}get_country_by_ip/223.236.202.227"
+					},
+					"response": []
+				},
+				{
+					"name": "ipinfo",
+					"id": "0dbdec75-328e-48b0-8ebc-68205f00ae7b",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "dsdsadsaf",
+								"value": "",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"url": {
+							"raw": "https://ipinfo.io/92.97.193.224?format=json&token=2f8bbcbb769c77",
+							"protocol": "https",
+							"host": [
+								"ipinfo",
+								"io"
+							],
+							"path": [
+								"92.97.193.224"
+							],
+							"query": [
+								{
+									"key": "format",
+									"value": "json"
+								},
+								{
+									"key": "ip",
+									"value": null,
+									"disabled": true
+								},
+								{
+									"key": "token",
+									"value": "2f8bbcbb769c77"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get_country_by_ip/{ip_address}",
+					"id": "bf87f1bf-1865-4f4c-a6dc-fd5eeab4435b",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "jwt",
+							"jwt": {
+								"secret": "98a144c773b6518a2e08d0b147edd10761bd35dd6cf5f8f0684a88a7c14548d",
+								"payload": "",
+								"algorithm": "HS256",
+								"isSecretBase64Encoded": false,
+								"addTokenTo": "header",
+								"headerPrefix": "Bearer",
+								"queryParamKey": "token",
+								"header": "{}"
+							}
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{URL}}get_country_by_ip/23.82.169.21"
+					},
+					"response": []
+				}
+			],
+			"id": "be87ac6b-9653-4f44-986e-5645ba36d185"
+		},
+		{
+			"name": "Ecommerce",
+			"item": [
+				{
+					"name": "cart",
+					"item": [
+						{
+							"name": "add item in cart",
+							"id": "ab4f4649-8ff1-4aa9-922f-0398f66557e4",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"token\": \"{{JWT}}\",\r\n  \"items\": [\r\n    {\r\n      \"course_id\": 20,\r\n      \"schedule_id\": 2114,\r\n      \"buy_price\": 57,\r\n      \"currency_code\": \"INR\",\r\n      \"quantity\": 10\r\n    },\r\n     {\r\n      \"course_id\": 13,\r\n      \"schedule_id\": 2114,\r\n      \"buy_price\": 57,\r\n      \"currency_code\": \"INR\",\r\n      \"quantity\": 10\r\n    },\r\n     {\r\n      \"course_id\": 13,\r\n      \"schedule_id\": 2114,\r\n      \"buy_price\": 57,\r\n      \"currency_code\": \"INR\",\r\n      \"quantity\": 10\r\n    },\r\n     {\r\n      \"course_id\": 90,\r\n      \"schedule_id\": 2114,\r\n      \"buy_price\": 57,\r\n      \"currency_code\": \"INR\",\r\n      \"quantity\": 10\r\n    }\r\n  ]\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": "{{URL}}cart"
+							},
+							"response": []
+						},
+						{
+							"name": "cart_item",
+							"id": "a862195f-87cf-4ebe-b0cf-aa6e1356539e",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{URL}}cart?token={{JWT}}",
+									"host": [
+										"{{URL}}cart"
+									],
+									"query": [
+										{
+											"key": "token",
+											"value": "{{JWT}}"
+										}
+									]
+								}
+							},
+							"response": []
+						}
+					],
+					"id": "7f8afbec-203c-49b5-a572-4011c3b62c4d"
+				},
+				{
+					"name": "user",
+					"item": [
+						{
+							"name": "forgotopassword",
+							"id": "afd8f641-98d6-498e-81cc-9d81c7e6911b",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"country_short_name\":\"in\",\r\n    \"email\":\"shubham@interactivebees.com\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": "{{URL}}forgot_password"
+							},
+							"response": []
+						},
+						{
+							"name": "signup",
+							"id": "82f11c22-abae-4340-9f6d-f7002ce31e9c",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"email\": \"ankush@interactivebees.com\",\r\n  \"password\":\"123456\"\r\n}"
+								},
+								"url": "{{URL}}signup"
+							},
+							"response": []
+						},
+						{
+							"name": "login",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"id": "8181aaff-a119-4e0d-9e16-5a21831faf3f",
+										"exec": [
+											"pm.environment.set(\"JWT\", pm.response.json().access_token);"
+										],
+										"type": "text/javascript",
+										"packages": {}
+									}
+								}
+							],
+							"id": "2235667d-e4a3-44a1-b959-68a6d7385772",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"auth": {
+									"type": "jwt",
+									"jwt": {
+										"secret": "{{secrete_key}}",
+										"addTokenTo": "header",
+										"payload": "",
+										"algorithm": "HS256",
+										"isSecretBase64Encoded": false,
+										"headerPrefix": "Bearer",
+										"queryParamKey": "token",
+										"header": "{}"
+									}
+								},
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"disabled": true
+									},
+									{
+										"key": "Authorization",
+										"value": "Bearer eyJhbGciOiJIUzI1NiIsImtpZCI6IjQiLCJ2ZXIiOiIxIiwidHlwIjoiSldUIn0.eyJhY2Nlc3NfdG9rZW4iOiIyVlhuRHVxNVdDWFJ2djNLRHZzYWkzc0siLCJjbGllbnRfaWQiOiJvZmd4a2h5N2djdXA2b2g2NG8yNDRtYXkiLCJlaWQiOjUzNDAwMjQxNCwic3RhY2tfa2V5IjoiUzEyIiwicGxhdGZvcm1fdmVyc2lvbiI6MiwiY2xpZW50X3R5cGUiOiJTZXJ2ZXJUb1NlcnZlciIsInBpZCI6MTJ9.ckgtBpVUXGQ45f3pwromG1Otcje_hdCxrQVLQnoxz54.aEZtmajmK1wu8QDiHVsLJv-2hSlZwi5NYtXuGVP27y54_xhCDKTFgwuRpGdVzScEt_0x3NuHkaYYIDbT9xIINwLRaR1DyBpa8QIdxx7G95Wu6WJWxRJT8G1yKutu8Yv4iWxlg2QJwe7j1uvZacmIUSihJQ6wsnHvfniw0J0",
+										"disabled": true
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"email\": \"ankush@interactivebees.com\",\r\n  \"password\":\"123456\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": "{{URL}}login"
+							},
+							"response": []
+						},
+						{
+							"name": "register update",
+							"id": "381d45d7-739a-47ed-9a70-ca9d6da42221",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": {
+										"token": "{{JWT}}"
+									}
+								},
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"first_name\":\"shubham\",\r\n    \"user_name\":\"skijij\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": "{{URL}}register/update"
+							},
+							"response": []
+						},
+						{
+							"name": "me",
+							"id": "e62e1074-7cf9-4027-ae88-c2c3fa96fb31",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": {
+										"token": "{{JWT}}"
+									}
+								},
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJjdXJyZW50X3VzZXJfZW1haWwiOiIxOHNodWJhaG0xOTk4QGdtYWlsLmNvbSIsImV4cCI6MTcxNTk0MTAzN30.JUjKRGQRmJVrdB_KlMQfb-7_MmoyQvYN9",
+										"disabled": true
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"disabled": true
+									},
+									{
+										"key": "token",
+										"value": "{{JWT}}",
+										"disabled": true
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"email\": \"shubhamkibees@gmail.com\",\r\n  \"country_short_name\": \"IND\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": "{{URL}}forgot_password"
+							},
+							"response": []
+						},
+						{
+							"name": "forgot password",
+							"id": "8b6f3d37-9798-479a-aa45-9f6239a6d32b",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"email\":\"manu202000@gmail.com\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": "{{URL}}forgot_password"
+							},
+							"response": []
+						}
+					],
+					"id": "6f3c5330-391d-4521-9a94-76b87137390a"
+				},
+				{
+					"name": "order",
+					"item": [
+						{
+							"name": "order",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"id": "81922681-2e5b-4ba0-9ae5-aa1630ae3e0b",
+										"exec": [
+											""
+										],
+										"type": "text/javascript",
+										"packages": {}
+									}
+								}
+							],
+							"id": "4e3f6c86-86b8-4f89-8d98-2a9a4bba8243",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": {
+										"token": "{{JWT}}"
+									}
+								},
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "{{URL}}order?token={{JWT}}&page=1",
+									"host": [
+										"{{URL}}order"
+									],
+									"query": [
+										{
+											"key": "token",
+											"value": "{{JWT}}"
+										},
+										{
+											"key": "page",
+											"value": "1"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "order_create",
+							"id": "159bc72f-fcdc-4793-91aa-0ee3c9e708e6",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"auth": {
+									"type": "jwt",
+									"jwt": {
+										"secret": "98a144c773b6518a2e08d0b147edd10761bd35dd6cf5f8f0684a88a7c14548d0",
+										"addTokenTo": "header",
+										"payload": "",
+										"algorithm": "HS256",
+										"isSecretBase64Encoded": false,
+										"headerPrefix": "Bearer",
+										"queryParamKey": "token",
+										"header": "{}"
+									}
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"token\": \"{{JWT}}\",\r\n    \"total_order_price\": 236,\r\n    \"tax\": 36,\r\n    \"tax_percent\": 18,\r\n    \"items\": [\r\n        {\r\n            \"course_id\": 2513,\r\n            \"schedule_id\": 2783,\r\n            \"buy_price\": 200,\r\n            \"course_duration\": \"2 Days\",\r\n            \"currency_name\": \"INR\",\r\n            \"quantity\": 1,\r\n            \"currency_code\": \"IN\"\r\n        }\r\n    ],\r\n    \"name\": \"Ankush k\",\r\n    \"email\": \"ankush@interactivebees.com\",\r\n    \"billing_address\": \"Delhi,India\",\r\n    \"country_id\": 250,\r\n    \"zip_code\": \"\",\r\n    \"currency_code\": \"INR\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": "{{URL}}order"
+							},
+							"response": []
+						},
+						{
+							"name": "single_order",
+							"id": "c1a2b89d-a828-4ec0-8fe3-b7fade515873",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"auth": {
+									"type": "jwt",
+									"jwt": {
+										"secret": "98a144c773b6518a2e08d0b147edd10761bd35dd6cf5f8f0684a88a7c14548d0",
+										"payload": "",
+										"algorithm": "HS256",
+										"isSecretBase64Encoded": false,
+										"addTokenTo": "header",
+										"headerPrefix": "Bearer",
+										"queryParamKey": "token",
+										"header": "{}"
+									}
+								},
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{URL}}single-order/ORD-20240629-1-B6T5T5?token={{JWT}}",
+									"host": [
+										"{{URL}}single-order"
+									],
+									"path": [
+										"ORD-20240629-1-B6T5T5"
+									],
+									"query": [
+										{
+											"key": "token",
+											"value": "{{JWT}}"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "orderConformation",
+							"id": "5eb6e7c7-d8ac-47de-bc6b-d24992d8e167",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"auth": {
+									"type": "jwt",
+									"jwt": {
+										"secret": "98a144c773b6518a2e08d0b147edd10761bd35dd6cf5f8f0684a88a7c14548d0",
+										"addTokenTo": "header",
+										"payload": "",
+										"algorithm": "HS256",
+										"isSecretBase64Encoded": false,
+										"headerPrefix": "Bearer",
+										"queryParamKey": "token",
+										"header": "{}"
+									}
+								},
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": "{{URL}}orderConformation?order_id=ORD-20240830-6-QFSMBU",
+									"host": [
+										"{{URL}}orderConformation"
+									],
+									"query": [
+										{
+											"key": "order_id",
+											"value": "ORD-20240830-6-QFSMBU"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "orderConformation Copy",
+							"id": "ad146190-5b20-4ba3-a8a8-dc860917402c",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"auth": {
+									"type": "noauth"
+								},
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{URL}}orderConfirmation?order_id=ORD-20241104-315-RVLS9P",
+									"host": [
+										"{{URL}}orderConfirmation"
+									],
+									"query": [
+										{
+											"key": "order_id",
+											"value": "ORD-20241104-315-RVLS9P"
+										}
+									]
+								}
+							},
+							"response": []
+						}
+					],
+					"id": "3dd3567e-1b95-41a0-9f20-5b8fad3699f2"
+				},
+				{
+					"name": "coupon",
+					"item": [
+						{
+							"name": "couponver",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"id": "2aad6477-32c0-417f-b9db-d4d8f785bfb2",
+										"exec": [
+											"pm.environment.set(\"coupon_id\", pm.response.json().coupon_id);\r",
+											""
+										],
+										"type": "text/javascript",
+										"packages": {}
+									}
+								}
+							],
+							"id": "aa23c52a-c6e0-4976-8a42-60a24a7ae4d2",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"code\":\"{{code}}\",\r\n    \"access_token\":\"{{JWT}}\",\r\n    \"country_id\":{{country_id}}\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": "{{URL}}couponVerification"
+							},
+							"response": []
+						},
+						{
+							"name": "couponUsed",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"id": "7d5512b0-15cc-459d-94f6-5bf240c99a13",
+										"exec": [
+											""
+										],
+										"type": "text/javascript",
+										"packages": {}
+									}
+								}
+							],
+							"id": "5bdca577-0762-4c2f-8916-2063f6a0d7e7",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"order_id\":\"ORD-20240830-6-QFSMBU\",\r\n    \"coupon_id\":7\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": "{{URL}}usedCoupon"
+							},
+							"response": []
+						},
+						{
+							"name": "getAllcoupon",
+							"id": "74c45481-e074-48ce-b8c3-07d9e4317fb2",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{URL}}getAllCoupon?country_id=101",
+									"host": [
+										"{{URL}}getAllCoupon"
+									],
+									"query": [
+										{
+											"key": "country_id",
+											"value": "101"
+										}
+									]
+								}
+							},
+							"response": []
+						}
+					],
+					"id": "6f285338-135f-42b5-909f-5c25d9c30316"
+				},
+				{
+					"name": "payment_ngenius",
+					"id": "4e3776e8-4343-4a81-8778-af41a3feb598",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "X-NGENIUS-Signature",
+								"value": "HZ1gQDqSdPCYsJK45qtoX7ghcrd83az2KqeYaQSsGeywNZ4MYaXXIWuUTUoerLMr",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"eventId\": '4729e057-f024-40c3-b4b7-1b496f69d113',\r\n  'eventName': 'PURCHASED',\r\n  'order': {\r\n    '_id': 'urn:order:ff7484b0-ca17-431b-b6b5-91b65b5c29ff',\r\n    '_links': {\r\n      'self': {\r\n        'href': 'http://transaction-service/transactions/outlets/8f3e513b-ebcf-46c3-b9e5-d84801a3fb3a/orders/ff7484b0-ca17-431b-b6b5-91b65b5c29ff'\r\n      },\r\n      'tenant-brand': {\r\n        'href': 'http://config-service/config/outlets/8f3e513b-ebcf-46c3-b9e5-d84801a3fb3a/configs/tenant-brand'\r\n      },\r\n      'merchant-brand': {\r\n        'href': 'http://config-service/config/outlets/8f3e513b-ebcf-46c3-b9e5-d84801a3fb3a/configs/merchant-brand'\r\n      }\r\n    },\r\n    'type': 'SINGLE',\r\n    'merchantDefinedData': {\r\n      \r\n    },\r\n    'action': 'PURCHASE',\r\n    'amount': {\r\n      'currencyCode': 'AED',\r\n      'value': 315000\r\n    },\r\n    'language': 'en',\r\n    'merchantAttributes': {\r\n      'cancelUrl': 'https://vinsys.com/training/checkout',\r\n      'redirectUrl': 'https://vinsys.com/thank-you',\r\n      'paymentAttempts': '3',\r\n      'maskPaymentInfo': 'true',\r\n      'order_id': 'ORD-20240701-132-ZJZFTZ'\r\n    },\r\n    'emailAddress': 'ivy@interactivebees.com',\r\n    'reference': 'ff7484b0-ca17-431b-b6b5-91b65b5c29ff',\r\n    'outletId': '8f3e513b-ebcf-46c3-b9e5-d84801a3fb3a',\r\n    'createDateTime': '2024-07-01T07:03:36.017Z',\r\n    'paymentMethods': {\r\n      'card': [\r\n        'VISA',\r\n        'MASTERCARD',\r\n        'DINERS_CLUB_INTERNATIONAL'\r\n      ]\r\n    },\r\n    'billingAddress': {\r\n      'firstName': 'test',\r\n      'lastName': 'asdlkhasdhjasdghjasgdhashdfhgasfdj',\r\n      'address1': 'SADDASD',\r\n      'city': '',\r\n      'countryCode': ''\r\n    },\r\n    'referrer': 'urn:Ecom:ff7484b0-ca17-431b-b6b5-91b65b5c29ff',\r\n    'formattedOrderSummary': {\r\n      \r\n    },\r\n    'formattedOriginalAmount': '',\r\n    'formattedAmount': 'د.إ.\\u200f 3,150',\r\n    '_embedded': {\r\n      'payment': [\r\n        {\r\n          '_id': 'urn:payment:79c30ade-041b-4118-813f-404ca32e9280',\r\n          '_links': {\r\n            'self': {\r\n              'href': 'http://transaction-service/transactions/outlets/8f3e513b-ebcf-46c3-b9e5-d84801a3fb3a/orders/ff7484b0-ca17-431b-b6b5-91b65b5c29ff/payments/79c30ade-041b-4118-813f-404ca32e9280'\r\n            },\r\n            'cnp:cancel': {\r\n              'href': 'http://transaction-service/transactions/outlets/8f3e513b-ebcf-46c3-b9e5-d84801a3fb3a/orders/ff7484b0-ca17-431b-b6b5-91b65b5c29ff/payments/79c30ade-041b-4118-813f-404ca32e9280/cancel'\r\n            },\r\n            'curies': [\r\n              {\r\n                'name': 'cnp',\r\n                'href': 'http://transaction-service/docs/rels/{rel}',\r\n                'templated': True\r\n              }\r\n            ]\r\n          },\r\n          'reference': '79c30ade-041b-4118-813f-404ca32e9280',\r\n          'paymentMethod': {\r\n            'expiry': '2046-05',\r\n            'cardholderName': 'test ibees sd',\r\n            'name': 'VISA',\r\n            'pan': '401200******1112'\r\n          },\r\n          'state': 'PURCHASED',\r\n          'amount': {\r\n            'currencyCode': 'AED',\r\n            'value': 315000\r\n          },\r\n          'updateDateTime': '2024-07-01T07:04:00.835Z',\r\n          'outletId': '8f3e513b-ebcf-46c3-b9e5-d84801a3fb3a',\r\n          'orderReference': 'ff7484b0-ca17-431b-b6b5-91b65b5c29ff',\r\n          'originIp': '49.205.180.247',\r\n          'purchaseData': {\r\n            'id': '86cbcad8-daca-4efa-9042-a390bec3a9fd',\r\n            'displayVoid': True,\r\n            'displayRefund': False\r\n          },\r\n          'authResponse': {\r\n            'authorizationCode': 'AB0012',\r\n            'success': True,\r\n            'resultCode': '00',\r\n            'resultMessage': 'Successful approval/completion or that VIP PIN verification is valid',\r\n            'mid': '200200001652',\r\n            'rrn': '000000123456'\r\n          },\r\n          '3ds': {\r\n            'status': 'SUCCESS',\r\n            'eci': '05',\r\n            'eciDescription': 'Card holder authenticated',\r\n            'summaryText': 'The card-holder has been successfully authenticated by their card issuer.'\r\n          }\r\n        }\r\n      ]\r\n    }\r\n  }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{URL}}newapi/webhook/aed"
+					},
+					"response": []
+				}
+			],
+			"id": "1eed1a01-beb3-4ded-80b3-cfefecaa30a2"
+		},
+		{
+			"name": "masterdata",
+			"item": [
+				{
+					"name": "payroll outsourcing enquery",
+					"id": "6ce3d332-4d36-495c-9214-37749bde3626",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "jwt",
+							"jwt": {
+								"secret": "{{secrete_key}}",
+								"addTokenTo": "header",
+								"payload": "",
+								"algorithm": "HS256",
+								"isSecretBase64Encoded": false,
+								"headerPrefix": "Bearer",
+								"queryParamKey": "token",
+								"header": "{}"
+							}
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"page_url\": \"https://example.com/form\",\r\n    \"referer\": \"https://example.com/referer\",\r\n    \"form_type\": \"registration\",\r\n    \"name\": \"John Doe\",\r\n    \"phone_number\": \"+1234567890\",\r\n    \"email\": \"shubhamkibees@gmail.com\",\r\n    \"location\": \"Web Development\",\r\n    \"company\": \"iojdsfiaj\",\r\n    \"message\": \"Looking forward to joining the course!\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{URL}}post-payroll-outsourcing-enquery"
+					},
+					"response": []
+				},
+				{
+					"name": "post-skill-development-csr-enquery",
+					"id": "a26a9b31-6bc3-4e62-b249-43b9386b969e",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "jwt",
+							"jwt": {
+								"secret": "{{secrete_key}}",
+								"addTokenTo": "header",
+								"payload": "",
+								"algorithm": "HS256",
+								"isSecretBase64Encoded": false,
+								"headerPrefix": "Bearer",
+								"queryParamKey": "token",
+								"header": "{}"
+							}
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"name\": \"Test\",\r\n  \"email\": \"shubhamkibees@gmail.com\",\r\n  \"phone_number\": \"+1234567890\",\r\n  \"education\": \"Bachelor's in Computer Science\",\r\n  \"passing_year\": \"2020\",\r\n  \"location\": \"New York\",\r\n  \"employment_status\": \"Employed\",\r\n  \"genre\": \"male\",\r\n  \"date_of_birth\": \"1995-07-15\",\r\n  \"availability_for_training\": \"Evenings\",\r\n  \"job_readiness\": \"High\",\r\n  \"relocation_readiness\": \"Willing\",\r\n  \"message\": \"I am interested in advancing my skills.\",\r\n  \"form_type\": \"Registration\",\r\n  \"referer\": \"Google Search\",\r\n  \"page_url\": \"https://example.com/application\"\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{URL}}post-skill-development-csr-enquery"
+					},
+					"response": []
+				},
+				{
+					"name": "post-skill-development-aws-restart",
+					"id": "d682436d-ff2a-4577-a9b4-2ad163df790c",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "jwt",
+							"jwt": {
+								"secret": "{{secrete_key}}",
+								"addTokenTo": "header",
+								"payload": "",
+								"algorithm": "HS256",
+								"isSecretBase64Encoded": false,
+								"headerPrefix": "Bearer",
+								"queryParamKey": "token",
+								"header": "{}"
+							}
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"name\": \"John Doe\",\r\n  \"email\": \"shubhamkibees@gmail.com\",\r\n  \"phone_number\": \"+1234567890\",\r\n  \"education\": \"Bachelor's in Computer Science\",\r\n  \"passing_year\": \"2020\",\r\n  \"location\": \"New York\",\r\n  \"employment_status\": \"Employed\",\r\n  \"genre\": \"male\",\r\n  \"date_of_birth\": \"1995-07-15\",\r\n  \"availability_for_training\": \"Evenings\",\r\n  \"job_readiness\": \"High\",\r\n  \"relocation_readiness\": \"Willing\",\r\n  \"message\": \"I am interested in advancing my skills.\",\r\n  \"form_type\": \"Registration\",\r\n  \"referer\": \"Google Search\",\r\n  \"page_url\": \"https://example.com/application\"\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{URL}}post-skill-development-aws-restart-enquery"
+					},
+					"response": []
+				},
+				{
+					"name": "post-skill-development-amber",
+					"id": "f2834218-d8c0-43f4-b6d2-7026bd341a83",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "jwt",
+							"jwt": {
+								"secret": "{{secrete_key}}",
+								"addTokenTo": "header",
+								"payload": "",
+								"algorithm": "HS256",
+								"isSecretBase64Encoded": false,
+								"headerPrefix": "Bearer",
+								"queryParamKey": "token",
+								"header": "{}"
+							}
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"name\": \"John Doe\",\r\n  \"email\": \"shubhamkibees@gmail.com\",\r\n  \"phone_number\": \"+1234567890\",\r\n  \"education\": \"Bachelor's in Computer Science\",\r\n  \"passing_year\": \"2020\",\r\n  \"location\": \"New York\",\r\n  \"employment_status\": \"Employed\",\r\n  \"genre\": \"male\",\r\n  \"date_of_birth\": \"1995-07-15\",\r\n  \"availability_for_training\": \"Evenings\",\r\n  \"job_readiness\": \"High\",\r\n  \"relocation_readiness\": \"Willing\",\r\n  \"message\": \"I am interested in advancing my skills.\",\r\n  \"form_type\": \"Registration\",\r\n  \"referer\": \"Google Search\",\r\n  \"page_url\": \"https://example.com/application\"\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{URL}}post-skill-development-amber-enquery"
+					},
+					"response": []
+				},
+				{
+					"name": "post-csr-partner-enquery",
+					"id": "10f4e7a4-3d6b-4fd9-9645-ad150919ad86",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "jwt",
+							"jwt": {
+								"secret": "{{secrete_key}}",
+								"addTokenTo": "header",
+								"payload": "",
+								"algorithm": "HS256",
+								"isSecretBase64Encoded": false,
+								"headerPrefix": "Bearer",
+								"queryParamKey": "token",
+								"header": "{}"
+							}
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"organization_name\": \"Green Earth Foundation\",\r\n  \"contact_person\": \"Alice Johnson\",\r\n  \"position\": \"CSR Manager\",\r\n  \"email\": \"shubhamkibees@gmail.com\",\r\n  \"phone_number\": \"+1234567890\",\r\n  \"reason_for_interest\": \"To collaborate on environmental sustainability projects\",\r\n  \"csr_initiatives\": \"Community tree planting, waste management awareness\",\r\n  \"additional_comments\": \"We are excited to explore partnership opportunities.\",\r\n  \"organization_website\": \"https://www.greenearth.org\",\r\n  \"message\": \"Looking forward to discussing how we can work together for a greener future.\",\r\n  \"Preferred_method\":\"test\",\r\n  \"form_type\": \"CSR Partnership Inquiry\",\r\n  \"referer\": \"LinkedIn\",\r\n  \"page_url\": \"https://example.com/partner-with-us\"\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{URL}}post-csr-partner-enquery"
+					},
+					"response": []
+				}
+			],
+			"id": "fedc07ee-1e9b-4d51-bd85-5627289bde66"
+		},
+		{
+			"name": "get-whitepaper-lis",
+			"id": "74b0b09c-d1d9-4a89-9deb-2b8eddce0511",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "jwt",
+					"jwt": {
+						"secret": "98a144c773b6518a2e08d0b147edd10761bd35dd6cf5f8f0684a88a7c14548d",
+						"payload": "",
+						"algorithm": "HS256",
+						"isSecretBase64Encoded": false,
+						"addTokenTo": "header",
+						"headerPrefix": "Bearer",
+						"queryParamKey": "token",
+						"header": "{}"
+					}
+				},
+				"method": "GET",
+				"header": [],
+				"url": "{{URL}}get-whitepaper-list"
+			},
+			"response": []
+		},
+		{
+			"name": "test",
+			"id": "ae7eda2e-f56c-41e2-9256-548ece11bf18",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "[\r\n    {\r\n      title: 'PMP® Certification Training',\r\n      icon: 'https://vinsys.live/static/media/training/course/icon/PMI-ATP-Logo_1_bqbw0z4.jpg',\r\n      icon_alt: 'PMP® Certification Training Course',\r\n      currency: { id: 1, title: 'INR', symbols: '₹' },\r\n      pricing: undefined,\r\n      currentUrl: '/training/project-management/pmp-certification',\r\n      duration: '4 days',\r\n      country: {\r\n        id: 101,\r\n        name: 'India',\r\n        short_name: 'IN',\r\n        country_short_code: 'IN',\r\n        country_code: '91',\r\n        flag: 'https://vinsys.live/static/media/icon-india_yHRe6Pk.png',\r\n        currency_icon: '₹',\r\n        currency_name: 'INR',\r\n        currency_interest: '18',\r\n        marquee: null,\r\n        marquee_status: 1,\r\n        show_on_side_menu: 1\r\n      },\r\n      singlescheduleItem: {\r\n        id: 2118,\r\n        delivery_format: {\r\n          id: 2,\r\n          title: 'Instructor-led Live Virtual/Online Training (ILVT)',\r\n          icon: \r\n            'https://vinsys.live/static/media/training/deliveryformat/icon/3.svg',\r\n          icon_alt: 'Instructor-led-live'\r\n        },\r\n        schedule_category: { id: 1, title: 'Weekend' },\r\n        buy_price: '3000',\r\n        class_type: 'Weekend',\r\n        start_date: '2024-10-19T00:00:00',\r\n        end_date: '2024-10-27T00:00:00',\r\n        class_session_date: '19-20-26-27-Oct-2024',\r\n        start_time: '1900-01-01T09:00:00',\r\n        end_time: '1900-01-01T17:00:00',\r\n        schedule_city: null,\r\n        time_zone: 'IST'\r\n      },\r\n      id: 2480,\r\n      quantity: 1,\r\n      schedule_id: 2118\r\n    }\r\n  ]",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "certificate",
+			"id": "34b128e4-2146-4a88-bd9a-fb1311b7b52c",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{URL}}user-certificate?token={{JWT}}",
+					"host": [
+						"{{URL}}user-certificate"
+					],
+					"query": [
+						{
+							"key": "token",
+							"value": "{{JWT}}"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get-seo",
+			"id": "6f74bbe3-8661-4428-bdcf-3fd9d4e2c2a3",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "jwt",
+					"jwt": {
+						"secret": "98a144c773b6518a2e08d0b147edd10761bd35dd6cf5f8f0684a88a7c14548d",
+						"payload": "",
+						"algorithm": "HS256",
+						"isSecretBase64Encoded": false,
+						"addTokenTo": "header",
+						"headerPrefix": "Bearer",
+						"queryParamKey": "token",
+						"header": "{}"
+					}
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "slug",
+						"value": "training",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "country_id",
+						"value": "101",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"url": {
+					"raw": "{{URL}}get-page-banner-seo/?slug=training&country_id=101",
+					"host": [
+						"{{URL}}get-page-banner-seo"
+					],
+					"path": [
+						""
+					],
+					"query": [
+						{
+							"key": "slug",
+							"value": "training"
+						},
+						{
+							"key": "country_id",
+							"value": "101"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getdata",
+			"id": "7dd04ea4-2c86-4f88-ab09-081a3a126e4e",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "jwt",
+					"jwt": {
+						"secret": "98a144c773b6518a2e08d0b147edd10761bd35dd6cf5f8f0684a88a7c14548d0",
+						"payload": "",
+						"algorithm": "HS256",
+						"isSecretBase64Encoded": false,
+						"addTokenTo": "header",
+						"headerPrefix": "Bearer",
+						"queryParamKey": "token",
+						"header": "{}"
+					}
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://www.vinsys.live/api/get-page-banner-seo/?slug=training&country_id=231",
+					"protocol": "https",
+					"host": [
+						"www",
+						"vinsys",
+						"live"
+					],
+					"path": [
+						"api",
+						"get-page-banner-seo",
+						""
+					],
+					"query": [
+						{
+							"key": "slug",
+							"value": "training"
+						},
+						{
+							"key": "country_id",
+							"value": "231"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "blog",
+			"id": "cac7f8b8-dc05-4c37-a008-db24e9d1e283",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "jwt",
+					"jwt": {
+						"secret": "{{secrete_key}}",
+						"addTokenTo": "header",
+						"payload": "",
+						"algorithm": "HS256",
+						"isSecretBase64Encoded": false,
+						"headerPrefix": "Bearer",
+						"queryParamKey": "token",
+						"header": "{}"
+					}
+				},
+				"method": "GET",
+				"header": [],
+				"url": "{{URL}}get-career-page"
+			},
+			"response": []
+		},
+		{
+			"name": "whitepaper",
+			"id": "5c0b6540-0f27-4b69-bb19-a03745fe2146",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "jwt",
+					"jwt": {
+						"secret": "98a144c773b6518a2e08d0b147edd10761bd35dd6cf5f8f0684a88a7c14548d",
+						"payload": "",
+						"algorithm": "HS256",
+						"isSecretBase64Encoded": false,
+						"addTokenTo": "header",
+						"headerPrefix": "Bearer",
+						"queryParamKey": "token",
+						"header": "{}"
+					}
+				},
+				"method": "GET",
+				"header": [],
+				"url": "{{URL}}get_home_page_details"
+			},
+			"response": []
+		},
+		{
+			"name": "{{URL}}get-white-papers-list",
+			"id": "cacdd3d6-5a9b-4cff-8d30-31fb31e71bb6",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "{{URL}}get-white-papers-list"
+			},
+			"response": []
+		},
+		{
+			"name": "congo_form",
+			"id": "08b02b2c-413c-4c01-9d22-5b35f6b812a3",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "jwt",
+					"jwt": {
+						"secret": "98a144c773b6518a2e08d0b147edd10761bd35dd6cf5f8f0684a88a7c14548d0",
+						"addTokenTo": "header",
+						"payload": "",
+						"algorithm": "HS256",
+						"isSecretBase64Encoded": false,
+						"headerPrefix": "Bearer",
+						"queryParamKey": "token",
+						"header": "{}"
+					}
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "name",
+							"value": "mmmmm",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "mmmmmm@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "phone_number",
+							"value": "90139459321",
+							"type": "text"
+						},
+						{
+							"key": "choose_program",
+							"value": "mmmmm",
+							"type": "text"
+						},
+						{
+							"key": "education",
+							"value": "sfdaaf",
+							"type": "text"
+						},
+						{
+							"key": "city",
+							"value": "afssa",
+							"type": "text"
+						},
+						{
+							"key": "country",
+							"value": "afssfa",
+							"type": "text"
+						},
+						{
+							"key": "field_of_study",
+							"value": "48744848",
+							"type": "text"
+						},
+						{
+							"key": "genre",
+							"value": " Male",
+							"type": "text"
+						},
+						{
+							"key": "date_of_birth",
+							"value": " 1990-01-01",
+							"type": "text"
+						},
+						{
+							"key": "languages_spoken",
+							"value": " English, French",
+							"type": "text"
+						},
+						{
+							"key": "institution",
+							"value": " University XYZ",
+							"type": "text"
+						},
+						{
+							"key": "academic_specialization",
+							"value": " Computer Science",
+							"type": "text"
+						},
+						{
+							"key": "computer_level",
+							"value": " Intermediate",
+							"type": "text"
+						},
+						{
+							"key": "it_training",
+							"value": " Yes",
+							"type": "text"
+						},
+						{
+							"key": "training_mode",
+							"value": " Online",
+							"type": "text"
+						},
+						{
+							"key": "desired_specialization",
+							"value": " Web Development",
+							"type": "text"
+						},
+						{
+							"key": "professional_experience",
+							"value": " 2 years in software development",
+							"type": "text"
+						},
+						{
+							"key": "experience_length",
+							"value": " 2 years",
+							"type": "text"
+						},
+						{
+							"key": "reason_for_training",
+							"value": " Career advancement",
+							"type": "text"
+						},
+						{
+							"key": "professional_goals",
+							"value": " Become a full-stack developer",
+							"type": "text"
+						},
+						{
+							"key": "how_did_you_hear",
+							"value": " Online advertisement",
+							"type": "text"
+						},
+						{
+							"key": "necessary_equipment",
+							"value": " Yes",
+							"type": "text"
+						},
+						{
+							"key": "availability",
+							"value": " Weekdays",
+							"type": "text"
+						},
+						{
+							"key": "preferred_time",
+							"value": " Evening",
+							"type": "text"
+						},
+						{
+							"key": "certify_information",
+							"value": " true",
+							"type": "text"
+						},
+						{
+							"key": "agree_terms",
+							"value": " true",
+							"type": "text"
+						},
+						{
+							"key": "id_attach",
+							"type": "file",
+							"src": "postman-cloud:///1ef69ddb-4c4c-4ce0-82b6-85b87eef9387"
+						},
+						{
+							"key": "photo_attach",
+							"type": "file",
+							"src": "postman-cloud:///1ef6c1d0-4636-4950-bed2-f46c7f00a400"
+						}
+					]
+				},
+				"url": "{{URL}}post-congo-form"
+			},
+			"response": []
+		},
+		{
+			"name": "New Request",
+			"id": "5f606c53-4315-4b14-b50a-d822d09c03af",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "jwt",
+					"jwt": {
+						"secret": "{{secrete_key}}",
+						"addTokenTo": "header",
+						"payload": "",
+						"algorithm": "HS256",
+						"isSecretBase64Encoded": false,
+						"headerPrefix": "Bearer",
+						"queryParamKey": "token",
+						"header": "{}"
+					}
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{URL}}get-certification-training-page?country_id=229",
+					"host": [
+						"{{URL}}get-certification-training-page"
+					],
+					"query": [
+						{
+							"key": "country_id",
+							"value": "229"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
