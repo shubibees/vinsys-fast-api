@@ -2,7 +2,7 @@
 	"info": {
 		"_postman_id": "a9648334-411b-4df8-a500-7059247cd24f",
 		"name": "fast",
-		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+		"schema": "https://schema.postman.com/json/collection/v2.0.0/collection.json"
 	},
 	"item": [
 		{
@@ -982,6 +982,41 @@
 				{
 					"name": "post-csr-partner-enquery",
 					"id": "10f4e7a4-3d6b-4fd9-9645-ad150919ad86",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "jwt",
+							"jwt": {
+								"secret": "{{secrete_key}}",
+								"addTokenTo": "header",
+								"payload": "",
+								"algorithm": "HS256",
+								"isSecretBase64Encoded": false,
+								"headerPrefix": "Bearer",
+								"queryParamKey": "token",
+								"header": "{}"
+							}
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"organization_name\": \"Green Earth Foundation\",\r\n  \"contact_person\": \"Alice Johnson\",\r\n  \"position\": \"CSR Manager\",\r\n  \"email\": \"shubhamkibees@gmail.com\",\r\n  \"phone_number\": \"+1234567890\",\r\n  \"reason_for_interest\": \"To collaborate on environmental sustainability projects\",\r\n  \"csr_initiatives\": \"Community tree planting, waste management awareness\",\r\n  \"additional_comments\": \"We are excited to explore partnership opportunities.\",\r\n  \"organization_website\": \"https://www.greenearth.org\",\r\n  \"message\": \"Looking forward to discussing how we can work together for a greener future.\",\r\n  \"Preferred_method\":\"test\",\r\n  \"form_type\": \"CSR Partnership Inquiry\",\r\n  \"referer\": \"LinkedIn\",\r\n  \"page_url\": \"https://example.com/partner-with-us\"\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{URL}}post-csr-partner-enquery"
+					},
+					"response": []
+				},
+				{
+					"name": "ramzan-offer-enquery",
+					"id": "62bca26d-c809-461d-badc-f174f7fb825b",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
 					},
