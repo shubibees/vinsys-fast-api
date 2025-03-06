@@ -1038,14 +1038,14 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n  \"organization_name\": \"Green Earth Foundation\",\r\n  \"contact_person\": \"Alice Johnson\",\r\n  \"position\": \"CSR Manager\",\r\n  \"email\": \"shubhamkibees@gmail.com\",\r\n  \"phone_number\": \"+1234567890\",\r\n  \"reason_for_interest\": \"To collaborate on environmental sustainability projects\",\r\n  \"csr_initiatives\": \"Community tree planting, waste management awareness\",\r\n  \"additional_comments\": \"We are excited to explore partnership opportunities.\",\r\n  \"organization_website\": \"https://www.greenearth.org\",\r\n  \"message\": \"Looking forward to discussing how we can work together for a greener future.\",\r\n  \"Preferred_method\":\"test\",\r\n  \"form_type\": \"CSR Partnership Inquiry\",\r\n  \"referer\": \"LinkedIn\",\r\n  \"page_url\": \"https://example.com/partner-with-us\"\r\n}\r\n",
+							"raw": "{\r\n  \"form_type\": \"string\",\r\n  \"referer\": \"string\",\r\n  \"page_url\": \"string\",\r\n  \"name\": \"string\",\r\n  \"email\": \"string\",\r\n  \"phone_number\": \"string\",\r\n  \"course_name\": \"string\",\r\n  \"address\": \"string\"\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
 								}
 							}
 						},
-						"url": "{{URL}}post-csr-partner-enquery"
+						"url": "{{URL}}ramzan-offer-enquery"
 					},
 					"response": []
 				}
