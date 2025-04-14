@@ -1515,7 +1515,8 @@
 			},
 			"request": {
 				"method": "GET",
-				"header": []
+				"header": [],
+				"url": "{{URL}}"
 			},
 			"response": []
 		}
