@@ -1048,6 +1048,18 @@
 						"url": "{{URL}}ramzan-offer-enquery"
 					},
 					"response": []
+				},
+				{
+					"name": "New Request",
+					"id": "7f5c19de-894f-4be6-a5ce-f363e4520726",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
 				}
 			],
 			"id": "fedc07ee-1e9b-4d51-bd85-5627289bde66"
