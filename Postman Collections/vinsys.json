@@ -1003,14 +1003,14 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n  \"organization_name\": \"Green Earth Foundation\",\r\n  \"contact_person\": \"Alice Johnson\",\r\n  \"position\": \"CSR Manager\",\r\n  \"email\": \"shubhamkibees@gmail.com\",\r\n  \"phone_number\": \"+1234567890\",\r\n  \"reason_for_interest\": \"To collaborate on environmental sustainability projects\",\r\n  \"csr_initiatives\": \"Community tree planting, waste management awareness\",\r\n  \"additional_comments\": \"We are excited to explore partnership opportunities.\",\r\n  \"organization_website\": \"https://www.greenearth.org\",\r\n  \"message\": \"Looking forward to discussing how we can work together for a greener future.\",\r\n  \"Preferred_method\":\"test\",\r\n  \"form_type\": \"CSR Partnership Inquiry\",\r\n  \"referer\": \"LinkedIn\",\r\n  \"page_url\": \"https://example.com/partner-with-us\"\r\n}\r\n",
+							"raw": "{\r\n  \"page_url\": \"https://example.com/webinar\",\r\n  \"referer\": \"https://google.com\",\r\n  \"event_id\": 42,\r\n  \"webinar\": \"Next-Gen AI Workshop\",\r\n  \"name\": \"John Doe\",\r\n  \"email\": \"john.doe@example.com\",\r\n  \"phone_number\": \"+1-202-555-0184\",\r\n  \"country\": 101,\r\n  \"state\": \"California\",\r\n  \"job_title\": \"Software Engineer\",\r\n  \"company\": \"TechNova Inc\"\r\n}\r\n",
 							"options": {
 								"raw": {
 									"language": "json"
 								}
 							}
 						},
-						"url": "{{URL}}post-csr-partner-enquery"
+						"url": "{{URL}}"
 					},
 					"response": []
 				},
