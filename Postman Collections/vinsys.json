@@ -905,7 +905,7 @@
 								}
 							}
 						},
-						"url": "{{URL}}post-skill-development-csr-enquery"
+						"url": "{{URL}}post-lets-talk"
 					},
 					"response": []
 				},
@@ -1010,7 +1010,7 @@
 								}
 							}
 						},
-						"url": "{{URL}}"
+						"url": "https://www.vinsys.com/api/post-event-registration"
 					},
 					"response": []
 				},
@@ -1289,7 +1289,7 @@
 				},
 				"method": "GET",
 				"header": [],
-				"url": "{{URL}}get_home_page_details"
+				"url": "{{URL}}/get_home_page_details"
 			},
 			"response": []
 		},
