@@ -1010,7 +1010,7 @@
 								}
 							}
 						},
-						"url": "https://www.vinsys.com/api/post-event-registration"
+						"url": "{{URL}}post-event-registration"
 					},
 					"response": []
 				},
@@ -1074,8 +1074,33 @@
 						"disableBodyPruning": true
 					},
 					"request": {
+						"auth": {
+							"type": "jwt",
+							"jwt": {
+								"secret": "{{secrete_key}}",
+								"algorithm": "HS256",
+								"isSecretBase64Encoded": false,
+								"payload": "{}",
+								"addTokenTo": "header",
+								"headerPrefix": "Bearer",
+								"queryParamKey": "token",
+								"header": "{}"
+							}
+						},
 						"method": "GET",
-						"header": []
+						"header": [],
+						"url": {
+							"raw": "{{URL}}get-training-home?country_id=249",
+							"host": [
+								"{{URL}}get-training-home"
+							],
+							"query": [
+								{
+									"key": "country_id",
+									"value": "249"
+								}
+							]
+						}
 					},
 					"response": []
 				}
