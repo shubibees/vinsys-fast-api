@@ -1065,6 +1065,24 @@
 			"id": "fedc07ee-1e9b-4d51-bd85-5627289bde66"
 		},
 		{
+			"name": "training-test",
+			"item": [
+				{
+					"name": "get-training-home",
+					"id": "40a9ac6e-d1e8-4cc0-8a90-8f419c59ec69",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				}
+			],
+			"id": "8e899d7a-0e4e-4cf7-a147-fc9739ad2216"
+		},
+		{
 			"name": "get-whitepaper-lis",
 			"id": "74b0b09c-d1d9-4a89-9deb-2b8eddce0511",
 			"protocolProfileBehavior": {
