@@ -1050,14 +1050,37 @@
 					"response": []
 				},
 				{
-					"name": "New Request",
-					"id": "7f5c19de-894f-4be6-a5ce-f363e4520726",
+					"name": "ramzan-offer-enquery Copy",
+					"id": "46645b88-bff4-4a98-9468-1348ac6b241b",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
 					},
 					"request": {
-						"method": "GET",
-						"header": []
+						"auth": {
+							"type": "jwt",
+							"jwt": {
+								"secret": "{{secrete_key}}",
+								"addTokenTo": "header",
+								"payload": "",
+								"algorithm": "HS256",
+								"isSecretBase64Encoded": false,
+								"headerPrefix": "Bearer",
+								"queryParamKey": "token",
+								"header": "{}"
+							}
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"form_type\": \"string\",\r\n  \"referer\": \"string\",\r\n  \"page_url\": \"string\",\r\n  \"name\": \"string\",\r\n  \"email\": \"string\",\r\n  \"phone_number\": \"string\",\r\n  \"course_name\": \"string\",\r\n  \"address\": \"string\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{URL}}ramzan-offer-enquery"
 					},
 					"response": []
 				}
