@@ -898,7 +898,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n  \"name\": \"Test\",\r\n  \"email\": \"shubhamkibees@gmail.com\",\r\n  \"phone_number\": \"+1234567890\",\r\n  \"education\": \"Bachelor's in Computer Science\",\r\n  \"passing_year\": \"2020\",\r\n  \"location\": \"New York\",\r\n  \"employment_status\": \"Employed\",\r\n  \"genre\": \"male\",\r\n  \"date_of_birth\": \"1995-07-15\",\r\n  \"availability_for_training\": \"Evenings\",\r\n  \"job_readiness\": \"High\",\r\n  \"relocation_readiness\": \"Willing\",\r\n  \"message\": \"I am interested in advancing my skills.\",\r\n  \"form_type\": \"Registration\",\r\n  \"referer\": \"Google Search\",\r\n  \"page_url\": \"https://example.com/application\"\r\n}\r\n",
+							"raw": "{\r\n  \"name\": \"Test\",\r\n  \"email\": \"shubhamkibees@gmail.com\",\r\n  \"phone_number\": \"+1234567890\",\r\n  \"education\": \"Bachelor's in Computer Science\",\r\n  \"passing_year\": \"1995-07-15\",\r\n  \"location\": \"New York\",\r\n  \"employment_status\": \"Employed\",\r\n  \"genre\": \"male\",\r\n  \"date_of_birth\": \"1995-07-15\",\r\n  \"availability_for_training\": \"Evenings\",\r\n  \"job_readiness\": \"High\",\r\n  \"relocation_readiness\": \"Willing\",\r\n  \"message\": \"I am interested in advancing my skills.\",\r\n  \"form_type\": \"Registration\",\r\n  \"referer\": \"Google Search\",\r\n  \"page_url\": \"https://example.com/application\"\r\n}\r\n",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -968,7 +968,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n  \"name\": \"John Doe\",\r\n  \"email\": \"shubhamkibees@gmail.com\",\r\n  \"phone_number\": \"+1234567890\",\r\n  \"education\": \"Bachelor's in Computer Science\",\r\n  \"passing_year\": \"2020\",\r\n  \"location\": \"New York\",\r\n  \"employment_status\": \"Employed\",\r\n  \"genre\": \"male\",\r\n  \"date_of_birth\": \"1995-07-15\",\r\n  \"availability_for_training\": \"Evenings\",\r\n  \"job_readiness\": \"High\",\r\n  \"relocation_readiness\": \"Willing\",\r\n  \"message\": \"I am interested in advancing my skills.\",\r\n  \"form_type\": \"Registration\",\r\n  \"referer\": \"Google Search\",\r\n  \"page_url\": \"https://example.com/application\"\r\n}\r\n",
+							"raw": "{\r\n  \"name\": \"John Doe\",\r\n  \"email\": \"shubhamkibees@gmail.com\",\r\n  \"phone_number\": \"+1234567890\",\r\n  \"education\": \"Bachelor's in Computer Science\",\r\n  \"passing_year\": \"1995-07-15\",\r\n  \"location\": \"New York\",\r\n  \"employment_status\": \"Employed\",\r\n  \"genre\": \"male\",\r\n  \"date_of_birth\": \"1995-07-15\",\r\n  \"availability_for_training\": \"Evenings\",\r\n  \"job_readiness\": \"High\",\r\n  \"relocation_readiness\": \"Willing\",\r\n  \"message\": \"I am interested in advancing my skills.\",\r\n  \"form_type\": \"Registration\",\r\n  \"referer\": \"Google Search\",\r\n  \"page_url\": \"https://example.com/application\"\r\n}\r\n",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -1003,7 +1003,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n  \"page_url\": \"https://example.com/webinar\",\r\n  \"referer\": \"https://google.com\",\r\n  \"event_id\": 42,\r\n  \"webinar\": \"Next-Gen AI Workshop\",\r\n  \"name\": \"John Doe\",\r\n  \"email\": \"john.doe@example.com\",\r\n  \"phone_number\": \"+1-202-555-0184\",\r\n  \"country\": 101,\r\n  \"state\": \"California\",\r\n  \"job_title\": \"Software Engineer\",\r\n  \"company\": \"TechNova Inc\"\r\n}\r\n",
+							"raw": "{\r\n  \"page_url\": \"https://example.com/webinar\",\r\n  \"referer\": \"https://google.com\",\r\n  \"event_id\": 42,\r\n  \"webinar\": \"Next-Gen AI Workshop\",\r\n  \"name\": \"John Doe\",\r\n  \"email\": \"john.doe@example.com\",\r\n  \"phone_number\": \"+1-202-555-0184\",\r\n  \"country\": 101,\r\n  \"state\": \"California\",\r\n  \"job_title\": \"Software Engineer\",\r\n  \"company\": \"TechNova Inc\"\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -1073,14 +1073,14 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n  \"form_type\": \"string\",\r\n  \"referer\": \"string\",\r\n  \"page_url\": \"string\",\r\n  \"name\": \"string\",\r\n  \"email\": \"string\",\r\n  \"phone_number\": \"string\",\r\n  \"course_name\": \"string\",\r\n  \"address\": \"string\"\r\n}",
+							"raw": "{\r\n  \"form_type\": \"string\",\r\n  \"referer\": \"string\",\r\n  \"page_url\": \"string\",\r\n  \"name\": \"string\",\r\n  \"email\": \"string\",\r\n  \"phone_number\": \"string\",\r\n  \"city\": \"string\",\r\n  \"course_name\": \"string\",\r\n  \"message\": \"string\"\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
 								}
 							}
 						},
-						"url": "{{URL}}ramzan-offer-enquery"
+						"url": "{{URL}}microsoft-landing-enquery"
 					},
 					"response": []
 				}
