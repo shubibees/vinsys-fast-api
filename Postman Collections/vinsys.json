@@ -1140,7 +1140,7 @@
 				"auth": {
 					"type": "jwt",
 					"jwt": {
-						"secret": "98a144c773b6518a2e08d0b147edd10761bd35dd6cf5f8f0684a88a7c14548d",
+						"secret": "{{secrete_key}}",
 						"payload": "",
 						"algorithm": "HS256",
 						"isSecretBase64Encoded": false,
@@ -1152,7 +1152,37 @@
 				},
 				"method": "GET",
 				"header": [],
-				"url": "{{URL}}get-whitepaper-list"
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"url": {
+					"raw": "{{URL}}get-course-slug/ms-project-2016-intermediate-certification?course_country_id=231&user_country_id=250&category_slug=project-management&course_country_slug=usa",
+					"host": [
+						"{{URL}}get-course-slug"
+					],
+					"path": [
+						"ms-project-2016-intermediate-certification"
+					],
+					"query": [
+						{
+							"key": "course_country_id",
+							"value": "231"
+						},
+						{
+							"key": "user_country_id",
+							"value": "250"
+						},
+						{
+							"key": "category_slug",
+							"value": "project-management"
+						},
+						{
+							"key": "course_country_slug",
+							"value": "usa"
+						}
+					]
+				}
 			},
 			"response": []
 		},
