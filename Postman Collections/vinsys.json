@@ -1233,6 +1233,18 @@
 						}
 					},
 					"response": []
+				},
+				{
+					"name": "/get-investor-page",
+					"id": "d081fc97-19fe-42dc-a382-b0cad1f475c2",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
 				}
 			],
 			"id": "138c6f19-b932-4ed3-98c7-b9bc53b32741"
