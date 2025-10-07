@@ -1172,14 +1172,65 @@
 					"response": []
 				},
 				{
-					"name": "New Request",
+					"name": "get-research-report-list",
 					"id": "5ca14882-890a-4d30-9cce-9f6da1d39253",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
 					},
 					"request": {
+						"auth": {
+							"type": "jwt",
+							"jwt": {
+								"secret": "{{secrete_key}}",
+								"payload": "",
+								"algorithm": "HS256",
+								"isSecretBase64Encoded": false,
+								"addTokenTo": "header",
+								"headerPrefix": "Bearer",
+								"queryParamKey": "token",
+								"header": "{}"
+							}
+						},
 						"method": "GET",
-						"header": []
+						"header": [],
+						"url": "{{URL}}get-research-report-list"
+					},
+					"response": []
+				},
+				{
+					"name": "get-research-report-page?slug",
+					"id": "3da00626-74ae-41f8-8dcb-880dd069e9f5",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "jwt",
+							"jwt": {
+								"secret": "{{secrete_key}}",
+								"payload": "",
+								"algorithm": "HS256",
+								"isSecretBase64Encoded": false,
+								"addTokenTo": "header",
+								"headerPrefix": "Bearer",
+								"queryParamKey": "token",
+								"header": "{}"
+							}
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{URL}}get-research-report-page?slug=powering-sustainable-ai",
+							"host": [
+								"{{URL}}get-research-report-page"
+							],
+							"query": [
+								{
+									"key": "slug",
+									"value": "powering-sustainable-ai"
+								}
+							]
+						}
 					},
 					"response": []
 				}
