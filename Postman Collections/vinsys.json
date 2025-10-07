@@ -1126,9 +1126,53 @@
 						}
 					},
 					"response": []
+				},
+				{
+					"name": "New Request",
+					"id": "0a8a1cd8-a6ea-4ae2-84bf-a17e06e35252",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
 				}
 			],
 			"id": "8e899d7a-0e4e-4cf7-a147-fc9739ad2216"
+		},
+		{
+			"name": "new api for new theam",
+			"item": [
+				{
+					"name": "New Request",
+					"id": "b2712070-9437-4ea3-9cdc-c176a49411b8",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "jwt",
+							"jwt": {
+								"secret": "{{secrete_key}}",
+								"addTokenTo": "header",
+								"payload": "",
+								"algorithm": "HS256",
+								"isSecretBase64Encoded": false,
+								"headerPrefix": "Bearer",
+								"queryParamKey": "token",
+								"header": "{}"
+							}
+						},
+						"method": "GET",
+						"header": [],
+						"url": "{{URL}}/get-leadership-list"
+					},
+					"response": []
+				}
+			],
+			"id": "138c6f19-b932-4ed3-98c7-b9bc53b32741"
 		},
 		{
 			"name": "get-whitepaper-lis",
@@ -1625,6 +1669,18 @@
 				"method": "GET",
 				"header": [],
 				"url": "{{URL}}"
+			},
+			"response": []
+		},
+		{
+			"name": "New Request",
+			"id": "3294a071-d00a-4f06-965a-ae4b3d44cfd5",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": []
 			},
 			"response": []
 		}
