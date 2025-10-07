@@ -1146,7 +1146,7 @@
 			"name": "new api for new theam",
 			"item": [
 				{
-					"name": "New Request",
+					"name": "get-leadership-list",
 					"id": "b2712070-9437-4ea3-9cdc-c176a49411b8",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
@@ -1167,7 +1167,19 @@
 						},
 						"method": "GET",
 						"header": [],
-						"url": "{{URL}}/get-leadership-list"
+						"url": "{{URL}}get-leadership-list"
+					},
+					"response": []
+				},
+				{
+					"name": "New Request",
+					"id": "5ca14882-890a-4d30-9cce-9f6da1d39253",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": []
 					},
 					"response": []
 				}
