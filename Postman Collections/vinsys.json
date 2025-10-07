@@ -1241,8 +1241,35 @@
 						"disableBodyPruning": true
 					},
 					"request": {
+						"auth": {
+							"type": "jwt",
+							"jwt": {
+								"secret": "{{secrete_key}}",
+								"payload": "",
+								"algorithm": "HS256",
+								"isSecretBase64Encoded": false,
+								"addTokenTo": "header",
+								"headerPrefix": "Bearer",
+								"queryParamKey": "token",
+								"header": "{}"
+							}
+						},
 						"method": "GET",
-						"header": []
+						"header": [],
+						"url": "{{URL}}get-investor-page"
+					},
+					"response": []
+				},
+				{
+					"name": "get-about-page-details",
+					"id": "e7df0e91-ff24-460b-aa61-353e901302bf",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "{{URL}}get-about-page-details"
 					},
 					"response": []
 				}
