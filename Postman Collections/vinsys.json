@@ -1285,6 +1285,18 @@
 						"url": "{{URL}}get-about-page-details"
 					},
 					"response": []
+				},
+				{
+					"name": "get-OurInitiatives-list",
+					"id": "3cea92a9-0e7a-4641-9ceb-720350f5b59c",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
 				}
 			],
 			"id": "138c6f19-b932-4ed3-98c7-b9bc53b32741"
