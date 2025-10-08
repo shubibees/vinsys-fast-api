@@ -1311,6 +1311,18 @@
 						"url": "{{URL}}get-OurInitiatives-list"
 					},
 					"response": []
+				},
+				{
+					"name": "/get-corporate-social-responsibility-page",
+					"id": "c7b86ab2-88f1-41f1-b107-c75b473f0b31",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
 				}
 			],
 			"id": "138c6f19-b932-4ed3-98c7-b9bc53b32741"
