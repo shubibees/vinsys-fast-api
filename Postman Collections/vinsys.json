@@ -1293,8 +1293,22 @@
 						"disableBodyPruning": true
 					},
 					"request": {
+						"auth": {
+							"type": "jwt",
+							"jwt": {
+								"secret": "{{secrete_key}}",
+								"payload": "",
+								"algorithm": "HS256",
+								"isSecretBase64Encoded": false,
+								"addTokenTo": "header",
+								"headerPrefix": "Bearer",
+								"queryParamKey": "token",
+								"header": "{}"
+							}
+						},
 						"method": "GET",
-						"header": []
+						"header": [],
+						"url": "{{URL}}get-OurInitiatives-list"
 					},
 					"response": []
 				}
