@@ -1220,14 +1220,14 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "{{URL}}get-research-report-page?slug=grate",
+							"raw": "{{URL}}get-research-report-page?slug=powering-sustainable-ai",
 							"host": [
 								"{{URL}}get-research-report-page"
 							],
 							"query": [
 								{
 									"key": "slug",
-									"value": "grate"
+									"value": "powering-sustainable-ai"
 								}
 							]
 						}
@@ -1256,7 +1256,18 @@
 						},
 						"method": "GET",
 						"header": [],
-						"url": "{{URL}}get-investor-page"
+						"url": {
+							"raw": "{{URL}}get-investor-page?slug=grate",
+							"host": [
+								"{{URL}}get-investor-page"
+							],
+							"query": [
+								{
+									"key": "slug",
+									"value": "grate"
+								}
+							]
+						}
 					},
 					"response": []
 				},
