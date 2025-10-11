@@ -1348,6 +1348,18 @@
 						"url": "{{URL}}get-corporate-social-responsibility-page"
 					},
 					"response": []
+				},
+				{
+					"name": "New Request",
+					"id": "c8d558cc-02d5-4c86-8232-4a741d709083",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
 				}
 			],
 			"id": "138c6f19-b932-4ed3-98c7-b9bc53b32741"
