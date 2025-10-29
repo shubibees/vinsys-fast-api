@@ -1376,7 +1376,7 @@
 					"response": []
 				},
 				{
-					"name": "New Request",
+					"name": "get_new_home_page_details",
 					"id": "f9bfae43-84b3-4f0a-bd8e-06e195d347eb",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
