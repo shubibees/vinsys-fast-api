@@ -1374,6 +1374,18 @@
 						"url": "{{URL}}get-investor-rlation"
 					},
 					"response": []
+				},
+				{
+					"name": "New Request",
+					"id": "f9bfae43-84b3-4f0a-bd8e-06e195d347eb",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
 				}
 			],
 			"id": "138c6f19-b932-4ed3-98c7-b9bc53b32741"
