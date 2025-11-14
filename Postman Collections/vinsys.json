@@ -1220,14 +1220,14 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "{{URL}}get-research-report-page?slug=powering-sustainable-ai",
+							"raw": "{{URL}}get-research-report-page?slug=empowering-data-science-capabilities-for-the-us-navy",
 							"host": [
 								"{{URL}}get-research-report-page"
 							],
 							"query": [
 								{
 									"key": "slug",
-									"value": "powering-sustainable-ai"
+									"value": "empowering-data-science-capabilities-for-the-us-navy"
 								}
 							]
 						}
