@@ -1467,17 +1467,24 @@
 				"disableBodyPruning": true
 			},
 			"request": {
-				"method": "GET",
+				"auth": {
+					"type": "bearer",
+					"bearer": {
+						"token": "{{secrete_key}}"
+					}
+				},
+				"method": "POST",
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "[\r\n    {\r\n      title: 'PMP® Certification Training',\r\n      icon: 'https://vinsys.live/static/media/training/course/icon/PMI-ATP-Logo_1_bqbw0z4.jpg',\r\n      icon_alt: 'PMP® Certification Training Course',\r\n      currency: { id: 1, title: 'INR', symbols: '₹' },\r\n      pricing: undefined,\r\n      currentUrl: '/training/project-management/pmp-certification',\r\n      duration: '4 days',\r\n      country: {\r\n        id: 101,\r\n        name: 'India',\r\n        short_name: 'IN',\r\n        country_short_code: 'IN',\r\n        country_code: '91',\r\n        flag: 'https://vinsys.live/static/media/icon-india_yHRe6Pk.png',\r\n        currency_icon: '₹',\r\n        currency_name: 'INR',\r\n        currency_interest: '18',\r\n        marquee: null,\r\n        marquee_status: 1,\r\n        show_on_side_menu: 1\r\n      },\r\n      singlescheduleItem: {\r\n        id: 2118,\r\n        delivery_format: {\r\n          id: 2,\r\n          title: 'Instructor-led Live Virtual/Online Training (ILVT)',\r\n          icon: \r\n            'https://vinsys.live/static/media/training/deliveryformat/icon/3.svg',\r\n          icon_alt: 'Instructor-led-live'\r\n        },\r\n        schedule_category: { id: 1, title: 'Weekend' },\r\n        buy_price: '3000',\r\n        class_type: 'Weekend',\r\n        start_date: '2024-10-19T00:00:00',\r\n        end_date: '2024-10-27T00:00:00',\r\n        class_session_date: '19-20-26-27-Oct-2024',\r\n        start_time: '1900-01-01T09:00:00',\r\n        end_time: '1900-01-01T17:00:00',\r\n        schedule_city: null,\r\n        time_zone: 'IST'\r\n      },\r\n      id: 2480,\r\n      quantity: 1,\r\n      schedule_id: 2118\r\n    }\r\n  ]",
+					"raw": "{\r\n  \"page_url\": \"https://example.com/trainings/backend-101\",\r\n  \"referer\": \"https://google.com\",\r\n  \"form_type\": \"training_enquiry\",\r\n  \"name\": \"Random User\",\r\n  \"phone_number\": \"+919812345678\",\r\n  \"email\": \"random.user@testmail.com\",\r\n  \"designation\": \"Backend Developer\",\r\n  \"country\": 250,\r\n  \"state\": 10,\r\n  \"city\": \"Bengaluru\",\r\n  \"company\": \"RandomTech Pvt Ltd\",\r\n  \"course\": \"FastAPI Mastery\",\r\n  \"message\": \"Interested in syllabus, pricing, and batch timings.\"\r\n}\r\n",
 					"options": {
 						"raw": {
 							"language": "json"
 						}
 					}
-				}
+				},
+				"url": "http://49.248.35.118:8181/post-training-form-data-new"
 			},
 			"response": []
 		},
